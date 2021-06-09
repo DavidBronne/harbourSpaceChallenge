@@ -1,10 +1,13 @@
 
+import ApprenticeshipTemp from './Components/ApprenticeshipTemp';
+import Navbar from './Components/Navbar'
 
 function App() {
   return (
-    <div className="App">
-      <h1>App</h1>
-    </div>
+      <div className="App">
+        <Navbar/>
+        <ApprenticeshipTemp/>
+      </div>
   );
 }
 
