@@ -19,8 +19,10 @@ const ApprenticeshipTemp = () => {
             <h2>Apprenticeship:</h2>
             { error && <div> {error} </div>}
             { isPending && <div>Loading...</div>}
+
             { data && <div>{data.meta.title}</div>}
-            {/* <Navbar data={data, isPending, error}/> */}
+            
+            <Navbar/>
          </div>
      );
     

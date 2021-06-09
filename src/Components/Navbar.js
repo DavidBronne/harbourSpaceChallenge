@@ -1,15 +1,13 @@
-import {useParams} from 'react-router-dom';
-import useFetchApi from '../contexts/ApprenticeshipContext'
+import {useContext} from 'react';
+import {ApprenticeshipContext} from '../contexts/ApprenticeshipContext'
 
-const Navbar = ({data}) => {
-console.log(`data`, data)
-    
+const Navbar = () => {
+    const {data, isPending, error} = useContext(ApprenticeshipContext)
     
     return (    
         <div className="Navbar">
             <h2>Navbar:</h2>
-
-
+            { data && <div>{data.meta.title}</div>}
         </div>
     )
 }
