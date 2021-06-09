@@ -1,9 +1,10 @@
 
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import ApprenticeshipTemp from './Components/ApprenticeshipTemp';
 import Navbar from './Components/Navbar'
 
-/* possibility to mention path='/:Apprenticeship' and get it as params in ApprenticeshipTemp component */
+/* End point to be used : /data-science-apprenticeship-zeptolab. 
+  Get it as params in ApprenticeshipTemp component */
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <div className="App">
         <Navbar/>
         <div className="App">
-          <Route path='/'>              
+          <Route path='/:apprenticeshipType'>              
             <ApprenticeshipTemp/>   
           </Route>
         </div>
