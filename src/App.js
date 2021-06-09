@@ -4,7 +4,7 @@ import ApprenticeshipTemp from './components/ApprenticeshipTemp';
 import ApprenticeshipContextProvider from './contexts/ApprenticeshipContext'
 
 
-/* End point to be used : /data-science-apprenticeship-zeptolab. 
+/* End point to be used : /data-science-apprenticeship-zeptolab
   Get it as params in ApprenticeshipTemp component */
 
 function App() {

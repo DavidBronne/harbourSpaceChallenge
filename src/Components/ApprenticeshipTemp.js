@@ -12,6 +12,7 @@ const ApprenticeshipTemp = () => {
     useFetchApi('https://stage.harbour.space/api/v1/scholarship_pages/' + apprenticeshipType)
     
     const {data, isPending, error} = useContext(ApprenticeshipContext)
+    
   
     return ( 
         <div className="ApprenticeshipTemp">

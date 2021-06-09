@@ -1,12 +1,10 @@
 import {useContext} from 'react';
 import {ApprenticeshipContext} from '../../contexts/ApprenticeshipContext'
-/* import BottomBarElement from './BottomBarElement' */
-import applicationCloseInCalculation from '../applicationCloseInCalculation'
-
+import ApplicationCloseInCalculation from '../ApplicationCloseInCalculation'
+    
 const BottomBar = () => {
     const {data, isPending, error} = useContext(ApprenticeshipContext)
     console.log(`data`, data)
-    const applicationCloseInDuration = ''
 
     // component of remaimg time with deadline injected
 
@@ -14,10 +12,10 @@ const BottomBar = () => {
         <div className="BottomBar">
         {data && <div>
                 <h2>BottomBar:</h2>
-                <div className="BottomBarElement">
-                            <div className="title">{data.scholarship.company.name}</div>
-                            <div className="content">{data.scholarship.company.type}</div>
-                        </div>
+                    <div className="BottomBarElement">
+                        <div className="title">{data.scholarship.company.name}</div>
+                        <div className="content">{data.scholarship.company.type}</div>
+                    </div>
                 <div className="BottomBarElement">
                     <div className="title">Location</div>
                     <div className="content">{data.scholarship.location.name}</div>
@@ -36,7 +34,7 @@ const BottomBar = () => {
                 </div>
                 <div className="BottomBarElement">
                     <div className="title">Application closes in</div>
-                    <div className="content">{applicationCloseInDuration}</div>
+                    <div className="content"><ApplicationCloseInCalculation appEndDate={data.scholarship.application_end_date}/></div>
                 </div>
              </div>
             }
