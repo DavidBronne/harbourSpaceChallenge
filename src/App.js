@@ -1,6 +1,6 @@
 
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import ApprenticeshipTemp from './Components/ApprenticeshipTemp';
+import ApprenticeshipTemp from './components/ApprenticeshipTemp';
 import ApprenticeshipContextProvider from './contexts/ApprenticeshipContext'
 
 
@@ -14,7 +14,8 @@ function App() {
         <div className="App">
           <Route path='/:apprenticeshipType'>              
             <ApprenticeshipContextProvider>
-              <ApprenticeshipTemp/>   
+            <h1>App</h1>
+              <ApprenticeshipTemp/>  
             </ApprenticeshipContextProvider>
           </Route>
         </div>
