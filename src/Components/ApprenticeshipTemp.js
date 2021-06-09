@@ -1,4 +1,5 @@
-import Navbar from './BottomBar'
+import BottomBar from './BottomBar'
+import DesktopBar from './DesktopBar'
 import {useParams} from 'react-router-dom';
 import {useContext} from 'react';
 import {ApprenticeshipContext} from '../contexts/ApprenticeshipContext'
@@ -16,13 +17,15 @@ const ApprenticeshipTemp = () => {
     
     return ( 
         <div className="ApprenticeshipTemp">
+            <DesktopBar/>
             <h2>Apprenticeship:</h2>
+
             { error && <div> {error} </div>}
             { isPending && <div>Loading...</div>}
 
             { data && <div>{data.meta.title}</div>}
             
-            <Navbar/>
+            <BottomBar/>
          </div>
      );
     
