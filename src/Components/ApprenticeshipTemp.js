@@ -1,4 +1,4 @@
-import Navbar from './Navbar'
+import Navbar from './BottomBar'
 import {useParams} from 'react-router-dom';
 import {useContext} from 'react';
 import {ApprenticeshipContext} from '../contexts/ApprenticeshipContext'
