@@ -1,5 +1,5 @@
 import {useState, useContext} from 'react';
-import {ApprenticeshipContext} from '../contexts/ApprenticeshipContext'
+import {ApprenticeshipContext} from '../../contexts/ApprenticeshipContext'
 import FaqAnswer from './FaqAnswer'
 
 const Faq = () => {

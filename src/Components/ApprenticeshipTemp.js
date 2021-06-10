@@ -3,7 +3,7 @@ import {useContext} from 'react';
 import {ApprenticeshipContext} from '../contexts/ApprenticeshipContext'
 import BottomBar from './bottomBar/BottomBar'
 import DesktopBar from './DesktopBar'
-import Faq from './Faq'
+import Faq from './faq/Faq'
 
 
 const ApprenticeshipTemp = () => {

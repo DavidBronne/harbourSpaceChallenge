@@ -1,5 +1,5 @@
 import {useState, useContext} from 'react';
-import {ApprenticeshipContext} from '../contexts/ApprenticeshipContext'
+import {ApprenticeshipContext} from '../../contexts/ApprenticeshipContext'
 
 const FaqAnswer = ({selection}) => {
     console.log(`selection`, selection)
