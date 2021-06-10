@@ -5,6 +5,7 @@ import BottomBar from './bottomBar/BottomBar'
 import DesktopBar from './DesktopBar'
 import Faq from './faq/Faq'
 import ApplySection from './ApplySection'
+import AboutSection from './AboutSection'
 
 
 const ApprenticeshipTemp = () => {
@@ -24,6 +25,7 @@ const ApprenticeshipTemp = () => {
             { isPending && <div>Loading...</div>}
             {/* <div>{data.meta.title}</div> */}
             <ApplySection/>
+            <AboutSection/>
             <Faq/>
             <BottomBar/>
          </div>
