@@ -9,7 +9,7 @@ const DesktopBar = () => {
             <ul className="primary-nav">
                 <li>Harbour Space { data && <small>{"/" + data.scholarship.name}</small>}</li>
                 <li className="trigger">Apply now</li>
-                <li>Burger Menu</li>
+                <li><img src="/img/menu.svg" alt="menu"/></li>
             </ul>
         </nav>
     )

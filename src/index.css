@@ -90,6 +90,11 @@ hr {
   align-items: center
 }
 
+.primary-nav img {
+width: 2em;
+margin: 10px;
+}
+
 .trigger {
   background-color: var(--secondary-color);
   position: absolute;
