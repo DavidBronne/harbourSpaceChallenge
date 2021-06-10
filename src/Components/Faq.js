@@ -28,9 +28,7 @@ const Faq = () => {
                     </select>
             </header>
             <div>
-                <h2>{selection}</h2>
                 <FaqAnswer selection={selection}/>
-                    
             </div>
         </section> 
     )
