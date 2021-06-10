@@ -4,6 +4,7 @@ import {ApprenticeshipContext} from '../contexts/ApprenticeshipContext'
 import BottomBar from './bottomBar/BottomBar'
 import DesktopBar from './DesktopBar'
 import Faq from './faq/Faq'
+import ApplySection from './ApplySection'
 
 
 const ApprenticeshipTemp = () => {
@@ -19,11 +20,10 @@ const ApprenticeshipTemp = () => {
         <div className="ApprenticeshipTemp">
             <DesktopBar/>
         <h2>ApprenticeshipTemp</h2>
-
             { error && <div> {error} </div>}
             { isPending && <div>Loading...</div>}
-
-            <div>{data.meta.title}</div>
+            {/* <div>{data.meta.title}</div> */}
+            <ApplySection/>
             <Faq/>
             <BottomBar/>
          </div>
