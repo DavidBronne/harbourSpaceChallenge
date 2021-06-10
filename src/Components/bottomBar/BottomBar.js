@@ -13,7 +13,6 @@ const BottomBar = () => {
         <div className="BottomBar">
         {data && 
             <div>
-
                 <BottomBarElement title={data.scholarship.company.name} content={data.scholarship.company.type}/>
                 <BottomBarElement title='Location' content={data.scholarship.location.name}/>
                 <BottomBarElement title='Duration' content={data.scholarship.duration + " full year"}/>
