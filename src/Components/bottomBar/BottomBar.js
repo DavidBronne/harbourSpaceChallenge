@@ -4,7 +4,7 @@ import ApplicationCloseInCalculation from '../ApplicationCloseInCalculation'
     
 const BottomBar = () => {
     const {data, isPending, error} = useContext(ApprenticeshipContext)
-    console.log(`data`, data)
+    /* console.log(`data`, data) */
 
     // component of remaimg time with deadline injected
 
