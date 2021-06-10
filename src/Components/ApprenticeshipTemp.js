@@ -6,6 +6,7 @@ import DesktopBar from './DesktopBar'
 import Faq from './faq/Faq'
 import ApplySection from './ApplySection'
 import AboutSection from './AboutSection'
+import Testimonials from './Testimonials'
 
 
 const ApprenticeshipTemp = () => {
@@ -26,6 +27,7 @@ const ApprenticeshipTemp = () => {
             {/* <div>{data.meta.title}</div> */}
             <ApplySection/>
             <AboutSection/>
+            <Testimonials/>
             <Faq/>
             <BottomBar/>
          </div>
