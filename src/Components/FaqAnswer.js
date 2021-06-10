@@ -15,17 +15,20 @@ const FaqAnswer = ({selection}) => {
         })
     } */
     return <div>
-        <h2>{selection}</h2>
+        
         { data && data.scholarship.faqs.items
                     .filter( item => {
                         return item.type === selection
                     })
                     .map( (el, i) => {
                         return <div key={i}>
-                                    <h2>{el.question}</h2>
-                                    {el.answer.map( an => {
-                                        return <p>{an.data}</p>
-                                    })}
+                                    <h2>{selection}</h2>
+                                    <details>
+                                        <summary>{el.question}</summary>
+                                        {el.answer.map( (an,i) => {
+                                            return <p key={i}>{an.data}</p>
+                                        })}
+                                    </details>
                             </div>
                     })
         }
