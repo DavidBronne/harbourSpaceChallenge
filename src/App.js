@@ -14,7 +14,6 @@ function App() {
         <div className="App">
           <Route path='/:apprenticeshipType'>              
             <ApprenticeshipContextProvider>
-            <h1>App</h1>
               <ApprenticeshipTemp/>  
             </ApprenticeshipContextProvider>
           </Route>

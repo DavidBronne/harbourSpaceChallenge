@@ -19,9 +19,9 @@ const ApprenticeshipTemp = () => {
     console.log(`data`, data)
    
     return data && ( 
-        <div className="ApprenticeshipTemp">
+        <div className="apprenticeship-temp">
             <DesktopBar/>
-        <h2>ApprenticeshipTemp</h2>
+        
             { error && <div> {error} </div>}
             { isPending && <div>Loading...</div>}
             {/* <div>{data.meta.title}</div> */}

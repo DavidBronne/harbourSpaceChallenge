@@ -22,6 +22,11 @@
 font-family: 'Apercu Pro';
 }
 
+
+/* .rotation-right {
+
+} */
+
 h1 {
   font-size: 48px;
   color: var(--main-color);
@@ -66,6 +71,7 @@ hr {
   border-radius: 29px;
   background-color: var(--main-color);
   color: white;
+  width: 10em;
 }
 
 
@@ -100,9 +106,35 @@ hr {
 
 
 /*------------------------------------*\
-  #SECTION 1
+  #APPLY-SECTION
 \*------------------------------------*/
-  
+.apply-section {
+  display:flex;
+  /* flex: 1; */
+  justify-content: center;
+}
+
+.apply-section__left {
+  width: 50vw;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+}
+
+.apply-section__right {
+  width: 50vw;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stamp {
+  position: absolute;
+    top: 75px;
+    right: 558px;
+    z-index: -1;
+}
 
 
 /*------------------------------------*\
