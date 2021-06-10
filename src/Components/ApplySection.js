@@ -28,7 +28,7 @@ const ApplySection = () => {
         
             <div className="apply-section__right">
                 <header>
-                    <img/>
+                    <img src="/img/Logo.jpg" alt="logo"/>
                     <div>
                         <div>Power By:</div>
                         <div>{data.scholarship.company.name}</div>

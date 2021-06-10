@@ -9,7 +9,9 @@ const AboutSection = () => {
     return (
         <section>
         <header>
-            <img/>
+            <div className="background-student">
+                <img src="/img/edit2 1.png" alt="student"/>
+            </div>
             <div>
                 <h1>About the Apprenticeship</h1>
                 <p>{data.scholarship.about[0].data}</p>

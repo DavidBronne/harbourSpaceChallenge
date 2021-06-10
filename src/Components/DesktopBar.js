@@ -7,7 +7,7 @@ const DesktopBar = () => {
     return (    
         <nav>
             <ul className="primary-nav">
-                <li>Harbour Space <small>{ data && <div>{data.scholarship.name}</div>}</small></li>
+                <li>Harbour Space { data && <small>{"/" + data.scholarship.name}</small>}</li>
                 <li className="trigger">Apply now</li>
                 <li>Burger Menu</li>
             </ul>
@@ -16,3 +16,4 @@ const DesktopBar = () => {
 }
 
 export default DesktopBar
+

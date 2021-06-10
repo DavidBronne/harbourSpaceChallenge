@@ -86,7 +86,7 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 2em;
+  height: 3em;
   align-items: center
 }
 
@@ -94,14 +94,17 @@ hr {
   background-color: var(--secondary-color);
   position: absolute;
   right: 8em;
-  top: 1em;  
+  top: 1em;
   padding: 1em;
   font-size: 1em;
-  height: 5em;
-  width: 5em;
-  line-height: 5em;
+  height: 4em;
+  width: 4em;
   text-align: center;
   border-radius: 50%;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 
@@ -138,9 +141,15 @@ hr {
 
 
 /*------------------------------------*\
-  #SECTION 2
+  #ABOUT-SECTION
 \*------------------------------------*/
+/* .background-student {
+  background-image: url("../public/img/");
+} */
 
+.background-student img {
+  border-radius: 50%;
+}
 /* Graduation line */
 
 .separator {
