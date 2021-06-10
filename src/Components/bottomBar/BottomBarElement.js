@@ -1,10 +1,10 @@
-/* const BottomBarElement = ({companyName , companyType}) => {
+const BottomBarElement = ({title , content}) => {
     return (
     <div className="BottomBarElement">
-        <div className="title">{companyName}</div>
-        <div className="content">{companyType}</div>
+        <div className="title">{title}</div>
+        <div className="content">{content}</div>
     </div>
     )
 }
 
-export default BottomBarElement */
+export default BottomBarElement

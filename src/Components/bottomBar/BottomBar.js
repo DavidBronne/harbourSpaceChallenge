@@ -1,6 +1,7 @@
 import {useContext} from 'react';
 import {ApprenticeshipContext} from '../../contexts/ApprenticeshipContext'
 import ApplicationCloseInCalculation from '../ApplicationCloseInCalculation'
+import BottomBarElement from './BottomBarElement'
     
 const BottomBar = () => {
     const {data, isPending, error} = useContext(ApprenticeshipContext)
@@ -10,33 +11,16 @@ const BottomBar = () => {
 
     return (    
         <div className="BottomBar">
-        {data && <div>
-                <h2>BottomBar:</h2>
-                    <div className="BottomBarElement">
-                        <div className="title">{data.scholarship.company.name}</div>
-                        <div className="content">{data.scholarship.company.type}</div>
-                    </div>
-                <div className="BottomBarElement">
-                    <div className="title">Location</div>
-                    <div className="content">{data.scholarship.location.name}</div>
-                </div>
-                <div className="BottomBarElement">
-                    <div className="title">Duration</div>
-                    <div className="content">{data.scholarship.duration} full year</div>
-                </div>
-                <div className="BottomBarElement">
-                    <div className="title">Start date</div>
-                    <div className="content">{data.scholarship.scholarship_start_date}</div>
-                </div>
-                <div className="BottomBarElement">
-                    <div className="title">Application deadline</div>
-                    <div className="content">{data.scholarship.application_end_date}</div>
-                </div>
-                <div className="BottomBarElement">
-                    <div className="title">Application closes in</div>
-                    <div className="content"><ApplicationCloseInCalculation appEndDate={data.scholarship.application_end_date}/></div>
-                </div>
-             </div>
+        {data && 
+            <div>
+
+                <BottomBarElement title={data.scholarship.company.name} content={data.scholarship.company.type}/>
+                <BottomBarElement title='Location' content={data.scholarship.location.name}/>
+                <BottomBarElement title='Duration' content={data.scholarship.duration + " full year"}/>
+                <BottomBarElement title='Start date' content={data.scholarship.scholarship_start_date}/>
+                <BottomBarElement title='Application deadline' content={data.scholarship.application_end_date}/>
+                <BottomBarElement title='Application closes in' content={<ApplicationCloseInCalculation appEndDate={data.scholarship.application_end_date}/>}/>
+            </div>
             }
         </div>
     )

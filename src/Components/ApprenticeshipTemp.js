@@ -15,7 +15,7 @@ const ApprenticeshipTemp = () => {
     const {data, isPending, error} = useContext(ApprenticeshipContext)
 
   
-    return ( 
+    return data && ( 
         <div className="ApprenticeshipTemp">
             <DesktopBar/>
         <h2>ApprenticeshipTemp</h2>
@@ -23,7 +23,7 @@ const ApprenticeshipTemp = () => {
             { error && <div> {error} </div>}
             { isPending && <div>Loading...</div>}
 
-            { data && <div>{data.meta.title}</div>}
+            <div>{data.meta.title}</div>
             <Faq/>
             <BottomBar/>
          </div>
