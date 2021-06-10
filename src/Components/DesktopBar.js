@@ -5,10 +5,13 @@ const DesktopBar = () => {
     const {data, isPending, error} = useContext(ApprenticeshipContext)
     
     return (    
-        <div className="DesktopBar">
-            <h2>DesktopBar:</h2>
-            { data && <div>{data.meta.title}</div>}
-        </div>
+        <nav>
+            <ul className="primary-nav">
+                <li>Harbour Space <small>{ data && <div>{data.scholarship.name}</div>}</small></li>
+                <li className="trigger">Apply now</li>
+                <li>Burger Menu</li>
+            </ul>
+        </nav>
     )
 }
 
