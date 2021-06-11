@@ -26,7 +26,7 @@ const FaqAnswer = ({selection}) => {
                                     <details className="format-2third-section">
                                         <summary>{el.question}</summary>
                                         {el.answer.map( (an,i) => {
-                                            return <p className="answer" key={i}>{an.data}</p>
+                                            return <p className="answer text-small" key={i}>{an.data}</p>
                                         })}
                                     </details>
                             </div>
