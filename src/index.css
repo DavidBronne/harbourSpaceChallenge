@@ -52,7 +52,7 @@ h3 {
 }
 
 p {
-  font-size: 26px;
+  font-size: 20px;
   color: var(--text-color);
   letter-spacing: -0.19px; 
   line-height: 35px;
@@ -94,7 +94,6 @@ hr {
 width: 2em;
 margin: 10px;
 }
-
 .trigger {
   background-color: var(--secondary-color);
   position: absolute;
@@ -118,7 +117,7 @@ margin: 10px;
 \*------------------------------------*/
 .apply-section {
   display:flex;
-  /* flex: 1; */
+  
   justify-content: center;
 }
 
@@ -130,19 +129,70 @@ margin: 10px;
   padding: 5em;
 }
 
-.apply-section__right {
-  width: 50vw;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .stamp {
   position: absolute;
     top: 75px;
     right: 558px;
     z-index: -1;
 }
+
+.apply-section__right {
+  width: 50vw;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.apply-section__right header{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: start;
+  /* padding: 2em; */
+  margin: 1em;
+}
+
+.apply-section__right div {
+  padding-left: 1em
+}
+
+.apply-section__right__Content {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.counterdown {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  padding: 1em;
+  margin: 1em;
+}
+.counterdown h2 {
+  margin:0;
+}
+.counterdown p {
+  margin:0;
+}
+
+.counterdown p ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  margin: 1em;
+  padding: 1em;
+  justify-content: space-between;
+}
+
 
 
 /*------------------------------------*\

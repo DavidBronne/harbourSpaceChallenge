@@ -57,7 +57,7 @@ const AboutSection = () => {
                 </div>
             </div>
             <hr></hr>
-            <div class="separator">Graduation</div>
+            <div className="separator">Graduation</div>
             <div>
                 <h2>A full-time contract</h2>
                 <h3>{data.scholarship.study_commitment_text + " Full-Time"}</h3>

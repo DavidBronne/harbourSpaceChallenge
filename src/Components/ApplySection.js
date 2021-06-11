@@ -11,7 +11,7 @@ const ApplySection = () => {
         <section className="apply-section">
             <div className="apply-section__left">
                 <h1>{data.scholarship.name}  
-                    <img className="stamp" src="/img/Icon.jpg" alt="Icon" ></img>
+                    {/* <img className="stamp" src="/img/Icon.jpg" alt="Icon" ></img> */}
                 </h1>
                    <p>
                         <b>A fully funded work-study program to launch your tech career</b>
@@ -35,24 +35,29 @@ const ApplySection = () => {
                     </div>
                 </header>
         
-                <div>
-                    <div>
+                <div className="apply-section__right__Content">
+                    <div className="counterdown">
                         <h2>Application close in</h2>
                         <p><ApplicationCloseInCalculation appEndDate={data.scholarship.application_end_date}/></p>
                     </div>
         
-                    <div>
+                    <div className="details"> 
                         <div>
-                            <BottomBarElement title='Location' content={data.scholarship.location.name}/>
+                            <div>
+                                <BottomBarElement title='Location' content={data.scholarship.location.name}/>
+                            </div>
+                            <div>
+                                <BottomBarElement title='Start date' content={data.scholarship.scholarship_start_date}/>
+                            </div>
                         </div>
+                        
                         <div>
-                            <BottomBarElement title='Duration' content={data.scholarship.duration + " full year"}/>
-                        </div>
-                        <div>
-                            <BottomBarElement title='Start date' content={data.scholarship.scholarship_start_date}/>
-                        </div>
-                        <div>
-                            <BottomBarElement title='Application deadline' content={data.scholarship.application_end_date}/>
+                            <div>
+                                <BottomBarElement title='Duration' content={data.scholarship.duration + " full year"}/>
+                            </div>
+                            <div>
+                                <BottomBarElement title='Application deadline' content={data.scholarship.application_end_date}/>
+                            </div>
                         </div>
                     </div>
                 </div>    

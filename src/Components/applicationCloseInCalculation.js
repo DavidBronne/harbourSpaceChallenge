@@ -25,9 +25,9 @@ const ApplicationCloseInCalculation = ({appEndDate}) => {
     
     return (
         <ul className="countdown">
-            <div>{remainingDays} Day</div>
-            <div>{remainingHours} Hrs</div>
-            <div>{remainingMins} Min</div>
+            <div>{remainingDays} Day :</div>
+            <div>{remainingHours} Hrs :</div>
+            <div>{remainingMins} Min :</div>
             <div>{remainingSec} Sec</div>
         </ul>
 
