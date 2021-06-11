@@ -1,7 +1,6 @@
 
 
 
-/* @import "../public/font/font-stylesheet.css";  */
 @import "./font/font-stylesheet.css";
 
 /*------------------------------------*\
@@ -222,8 +221,8 @@ margin: 10px;
 \*------------------------------------*/
 
 .background-bottom {
-    background-position: right bottom; /*Positioning*/
-    background-repeat: no-repeat; /*Prevent showing multiple background images*/
+    background-position: right bottom; 
+    background-repeat: no-repeat; 
     z-index: -1;
 }
 
@@ -240,7 +239,6 @@ margin: 10px;
   flex-direction: row;
   align-items: center;
   align-self: start;
-  /* padding-left: 2em; */
   margin-left: 0.5em;
 }
 
@@ -326,7 +324,6 @@ margin: 10px;
 \*------------------------------------*/
 .profile-card {
   cursor: move;
-  /* cursor: url('/img/Button.png'), auto; */
 }
 
 .background-bottom {
@@ -380,7 +377,7 @@ select > option {
   position: absolute;
 }
 
-/* Style items (options): */
+
 .select-items {
   position: absolute;
   background-color: DodgerBlue;
@@ -401,8 +398,11 @@ select > option {
 }
 
 details>summary {
- 
   list-style: none;
+}
+
+details {
+  transition: .5s ease-in-out;
 }
 summary::-webkit-details-marker {
   display: none
@@ -416,10 +416,18 @@ summary::after {
   padding: 1em;
   position: absolute;
   right: 9%;
-
 }
 details[open] summary:after {
   content: "-";
+  animation: sweep .5s ease-in-out;
+  background: white;
+  color: var(--text-color);
+  border: solid 1px var(--light-color);
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateX(-10px)}
+  100%  {opacity: 1; transform: translateX(0)}
 }
 
 
