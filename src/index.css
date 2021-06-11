@@ -148,13 +148,10 @@ margin: 10px;
   flex-direction: row;
   align-items: center;
   align-self: start;
-  /* padding: 2em; */
-  margin: 1em;
+  padding-left: 2em;
+  margin-left: 1.5em;
 }
 
-.apply-section__right div {
-  padding-left: 1em
-}
 
 .apply-section__right__Content {
   display: flex;
