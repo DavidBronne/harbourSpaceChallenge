@@ -146,12 +146,30 @@ margin: 10px;
   display:flex;
   flex-direction: row;
 }
+.format-column-item {
+  display:flex;
+  flex-direction: column;
+}
 
 .format-wrap-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.format-align-center-item {
+  display: flex;
+  
+  align-items: center;
+}
+
+.margin-0 {
+  margin:0;
+}
+
+.rounded-img {
+  border-radius: 50%;
+}
+
 
 .format-50pc-item {
   width:50%;
@@ -161,6 +179,10 @@ margin: 10px;
 }
 .format-90pc-item {
   width:90%;
+}
+
+.logo {
+  width: 15px;
 }
 
 
@@ -235,9 +257,7 @@ margin: 10px;
   justify-content: space-around;
 }
 
-.background-student img {
-  border-radius: 50%;
-}
+
 /* Graduation line - src=stack overflow */
 
 .separator {
@@ -262,9 +282,12 @@ margin: 10px;
   }
 
 /*------------------------------------*\
-  #SECTION 3
+  #PROFILE-CARD 3
 \*------------------------------------*/
-
+.profile-card {
+  cursor: move;
+  /* cursor: url('/img/Button.png'), auto; */
+}
 /* FAQ */
 
 details>summary {

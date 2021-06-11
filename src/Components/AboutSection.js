@@ -10,7 +10,7 @@ const AboutSection = () => {
         <section >
         <header className="format-section">
             <div className="background-student format-half-section">
-                <img src="/img/edit2 1.png" alt="student"/>
+                <img className="rounded-img" src="/img/edit2 1.png" alt="student"/>
             </div>
             <div className="format-half-section">
                 <h1>About the Apprenticeship</h1>
