@@ -15,17 +15,19 @@ const Faq = () => {
 
     
     return (
-        <section>
-            <header>
-                <h1>Faqs</h1>
-                    <label htmlFor="categories"> filter by:</label>
-                    <select placeholder={selection} onChange={(e) => handlechange (e)} name="categories" id="categories"> 
-                    {data && 
-                            data.scholarship.faqs.categories.map( (category,i) => {
-                                return <option value={category} key={i}>{category}</option>
-                            })
-                    } 
-                    </select>
+        <section className="format-header-faq">
+            <header className="format-row-item format-wrap-item">
+                <h1 className="format-1third-section">Frequently asked questions</h1>
+                    <div className="format-align-self-center-item select-wrapper">
+                        <label htmlFor="categories" className="format-align-self-center-item"> filter by:</label>
+                        <select placeholder={selection} onChange={(e) => handlechange (e)} name="categories" id="categories" className="btn-gray select"> 
+                        {data && 
+                                data.scholarship.faqs.categories.map( (category,i) => {
+                                    return <option value={category} key={i}>{category}</option>
+                                })
+                        } 
+                        </select>
+                    </div>
             </header>
             <div>
                 <FaqAnswer selection={selection}/>

@@ -8,10 +8,10 @@ const ApplySection = () => {
     console.log(`data`, data)
 
     return data && (
-        <section className="format-section">
+        <section className="format-section background-bottom reverse" style={{ backgroundImage: "url(/img/Pattern.png)" }}>
             <div className="format-half-section">
                 <h1>{data.scholarship.name}  
-                    {/* <img className="stamp" src="/img/Icon.jpg" alt="Icon" ></img> */}
+                    <img className="stamp" src="/img/Icon.jpg" alt="Icon" ></img>
                 </h1>
                    <p>
                         <b>A fully funded work-study program to launch your tech career</b>

@@ -4,12 +4,12 @@ const Testimonials = () => {
     
 
     return (
-        <section id="slider" className="format-section grid-item main">
+        <section id="slider" className="format-section grid-item main background-center" style={{ backgroundImage: "url(/img/Pattern.png)" }}>
             <div className="items">
                 <div id="slides" className="profile-card format-column-item format-90pc-item format-item-box item item1">
                     <header>
                         <div className="format-row-item format-wrap-item">
-                            <div className="format-row-item">
+                            <div className="format-row-item card">
                                 <img className="rounded-img" src="/img/profilePic.png" alt="Profile pic"/>
                                 <div className="format-column-item format-align-center-item">
                                     <h2 className="margin-0">Name</h2>
@@ -29,7 +29,7 @@ const Testimonials = () => {
                 <div id="slides" className="profile-card format-column-item format-90pc-item format-item-box item item3">
                     <header>
                         <div className="format-row-item format-wrap-item">
-                            <div className="format-row-item">
+                            <div className="format-row-item card">
                                 <img className="rounded-img" src="/img/profilePic.png" alt="Profile pic"/>
                                 <div className="format-column-item format-align-center-item">
                                     <h2 className="margin-0">Name</h2>
@@ -49,7 +49,7 @@ const Testimonials = () => {
                 <div id="slides" className="profile-card format-column-item format-90pc-item format-item-box item item3">
                     <header>
                         <div className="format-row-item format-wrap-item">
-                            <div className="format-row-item">
+                            <div className="format-row-item card">
                                 <img className="rounded-img" src="/img/profilePic.png" alt="Profile pic"/>
                                 <div className="format-column-item format-align-center-item">
                                     <h2 className="margin-0">Name</h2>

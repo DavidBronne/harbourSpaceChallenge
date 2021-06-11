@@ -7,9 +7,9 @@ import {ApprenticeshipContext} from '../contexts/ApprenticeshipContext'
 const AboutSection = () => {
     const {data, isPending, error} = useContext(ApprenticeshipContext)
     return (
-        <section >
+        <section>
         <header className="format-section">
-            <div className="background-student format-half-section">
+            <div className="format-half-section background-rounded" style={{ backgroundImage: "url(/img/PatternStudent.png)" }}>
                 <img className="rounded-img" src="/img/edit2 1.png" alt="student"/>
             </div>
             <div className="format-half-section">
@@ -18,15 +18,13 @@ const AboutSection = () => {
             </div>
         </header>
         <div className="format-section">   
-            <div className="format-1third-section format-item-box">
+            <div className="format-1third-section format-item-box format-wrap-item">
                 <div>
                     <h2>Scholarship value</h2>
-                    <p>{data.scholarship.total_value}</p>
+                    <p className="emphase">{data.scholarship.total_value}</p>
                 </div>
             
-                <hr className="format-90pc-item"></hr>
-
-                <div className="format-row-item format-wrap-item">
+                <div className="format-row-item format-wrap-item border-top format-1third-height">
                     <div className="format-50pc-item">
                         <h2>Tutition covered</h2>
                         <p>{data.scholarship.tuition}</p>
@@ -37,33 +35,36 @@ const AboutSection = () => {
                     </div>
                     <div  className="format-100pc-item">
                         <h2>Living stipend</h2>
-                        <p>{data.scholarship.stipend_per_year}</p>
-                        <p>{data.scholarship.stipend_per_month + "/month"}</p>
+                        <p>{data.scholarship.stipend_per_year} <small>{"(" + data.scholarship.stipend_per_month + "/month)"}</small></p>
+                        
                     </div>
                 </div>
             </div>
-            <div className="format-2third-section">
+            <div className="format-2third-section format-1third-height">
                 <div className="format-row-item">
                     <div className="format-item-box">
-                        <h2>Study commitment</h2>
-                        <h3>{data.scholarship.study_commitment + " hours / day"}</h3>
-                        <hr className="format-90pc-item"></hr>
-                        <p>{data.scholarship.study_commitment_text}</p>
+                        <div className="inner-box">
+                            <h2>Study commitment</h2>
+                            <h3>{data.scholarship.study_commitment + " hours / day"}</h3>
+                        </div>
+                        <p className="border-top">{data.scholarship.study_commitment_text}</p>
                     </div>
                     <div className="format-item-box">
-                        <h2>Work commitment</h2>
-                        <h3>{data.scholarship.internship_commitment + " hours / day"}</h3>
-                        <hr className="format-90pc-item"></hr>
-                        <p>{data.scholarship.internship_commitment_text}</p>
+                        <div className="inner-box">
+                            <h2>Work commitment</h2>
+                            <h3>{data.scholarship.internship_commitment + " hours / day"}</h3>
+                        </div>
+                        <p className="border-top">{data.scholarship.internship_commitment_text}</p>
                     </div>
                 </div>
-
                 <div className="separator">Graduation</div>
                 <div className="format-item-box">
-                    <h2>A full-time contract</h2>
-                    <h3>{data.scholarship.study_commitment_text + " Full-Time"}</h3>
-                    <hr></hr>
-                    <p>You’ll be guaranteed a 1 year contract with SCG upon graduation. </p>
+                    <div className="inner-box">
+                        <h2>A full-time contract</h2>
+                        <h3>{data.scholarship.study_commitment_text + " Full-Time"}</h3>
+                    </div>
+
+                    <p className="border-top">You’ll be guaranteed a 1 year contract with SCG upon graduation. </p>
                 </div>
             </div>
         </div>

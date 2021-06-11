@@ -21,12 +21,12 @@ const FaqAnswer = ({selection}) => {
                         return item.type === selection
                     })
                     .map( (el, i) => {
-                        return <div key={i}>
-                                    <h2>{selection}</h2>
-                                    <details>
+                        return <div className="format-row-item border-top" key={i}>
+                                    <h2 className="format-1third-section">{selection}</h2>
+                                    <details className="format-2third-section">
                                         <summary>{el.question}</summary>
                                         {el.answer.map( (an,i) => {
-                                            return <p key={i}>{an.data}</p>
+                                            return <p className="answer" key={i}>{an.data}</p>
                                         })}
                                     </details>
                             </div>
