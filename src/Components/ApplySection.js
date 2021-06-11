@@ -8,7 +8,7 @@ const ApplySection = () => {
     console.log(`data`, data)
 
     return data && (
-        <section className="apply-section">
+        <section className="format-section">
             <div className="format-half-section">
                 <h1>{data.scholarship.name}  
                     {/* <img className="stamp" src="/img/Icon.jpg" alt="Icon" ></img> */}
@@ -35,13 +35,13 @@ const ApplySection = () => {
                     </div>
                 </header>
         
-                <div className="apply-section__right__Content">
-                    <div className="counterdown">
+                <div >
+                    <div className="counterdown format-item-box ">
                         <h2>Application close in</h2>
                         <p><ApplicationCloseInCalculation appEndDate={data.scholarship.application_end_date}/></p>
                     </div>
         
-                    <div className="details"> 
+                    <div className="details format-item-box"> 
                         <div>
                             <div>
                                 <BottomBarElement title='Location' content={data.scholarship.location.name}/>

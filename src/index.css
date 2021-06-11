@@ -111,23 +111,64 @@ margin: 10px;
   align-items: center;
 }
 
-
-/*------------------------------------*\
-  #APPLY-SECTION
-\*------------------------------------*/
-.apply-section {
+.format-section {
   display:flex; 
   justify-content: center;
 }
 
 
 .format-half-section {
-  width: 50vw;
   display:flex;
+  width:50%;
   flex-direction: column;
   justify-content: center;
   padding: 5em;
 }
+
+.format-1third-section {
+  display:flex;
+  flex-direction: column;
+  width: 33vw;
+}
+.format-2third-section {
+  display:flex;
+  flex-direction: column;
+  width: 67vw;
+}
+
+.format-item-box {
+  border: solid 1px var(--light-color);
+  padding: 1em;
+  margin: 1em;
+}
+
+.format-row-item {
+  display:flex;
+  flex-direction: row;
+}
+
+.format-wrap-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.format-50pc-item {
+  width:50%;
+}
+.format-100pc-item {
+  width:100%;
+}
+.format-90pc-item {
+  width:90%;
+}
+
+
+
+/*------------------------------------*\
+  #APPLY-SECTION
+\*------------------------------------*/
+
 
 .stamp {
   position: absolute;
@@ -156,9 +197,7 @@ margin: 10px;
 .counterdown {
   display: flex;
   flex-direction: column;
-  border: solid 1px var(--light-color);
-  padding: 1em;
-  margin: 1em;
+
 }
 .counterdown h2 {
   margin:0;
@@ -178,9 +217,6 @@ margin: 10px;
 .details {
   display: flex;
   flex-direction: row;
-  border: solid 1px var(--light-color);
-  margin: 1em;
-  padding: 1em;
   justify-content: space-between;
 }
 
@@ -202,7 +238,7 @@ margin: 10px;
 .background-student img {
   border-radius: 50%;
 }
-/* Graduation line */
+/* Graduation line - src=stack overflow */
 
 .separator {
     display: flex;
