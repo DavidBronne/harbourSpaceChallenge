@@ -10,9 +10,9 @@ const BottomBar = () => {
     // component of remaimg time with deadline injected
 
     return (    
-        <div className="BottomBar">
+        <div className="BottomBar fix-bottom">
         {data && 
-            <div>
+            <div className="format-row-item format-wrap-item ">
                 <BottomBarElement title={data.scholarship.company.name} content={data.scholarship.company.type}/>
                 <BottomBarElement title='Location' content={data.scholarship.location.name}/>
                 <BottomBarElement title='Duration' content={data.scholarship.duration + " full year"}/>

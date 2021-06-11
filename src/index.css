@@ -74,7 +74,9 @@ hr {
   width: 10em;
 }
 
-
+.apprenticeship-temp {
+  margin-bottom: 15vh;
+}
 /*------------------------------------*\
   #NAVBAR
 \*------------------------------------*/
@@ -310,4 +312,23 @@ summary::after {
 }
 details[open] summary:after {
   content: "-";
+}
+
+
+/*------------------------------------*\
+  #BOTTOM BAR
+\*------------------------------------*/
+
+.countdown {
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+
+.fix-bottom {
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff;
+  width:100%;
+  height:10vh;
 }

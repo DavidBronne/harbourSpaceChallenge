@@ -24,11 +24,11 @@ const ApplicationCloseInCalculation = ({appEndDate}) => {
     
     
     return (
-        <ul className="countdown">
-            <div>{remainingDays} Day :</div>
-            <div>{remainingHours} Hrs :</div>
-            <div>{remainingMins} Min :</div>
-            <div>{remainingSec} Sec</div>
+        <ul className="countdown format-row-item">
+            <li>{remainingDays} Day :</li>
+            <li>{remainingHours} Hrs :</li>
+            <li>{remainingMins} Min :</li>
+            <li>{remainingSec} Sec</li>
         </ul>
 
         )
