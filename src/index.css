@@ -116,12 +116,12 @@ margin: 10px;
   #APPLY-SECTION
 \*------------------------------------*/
 .apply-section {
-  display:flex;
-  
+  display:flex; 
   justify-content: center;
 }
 
-.apply-section__left {
+
+.format-half-section {
   width: 50vw;
   display:flex;
   flex-direction: column;
@@ -136,20 +136,14 @@ margin: 10px;
     z-index: -1;
 }
 
-.apply-section__right {
-  width: 50vw;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.apply-section__right header{
+
+.format-half-section header{
   display:flex;
   flex-direction: row;
   align-items: center;
   align-self: start;
-  padding-left: 2em;
-  margin-left: 1.5em;
+  /* padding-left: 2em; */
+  margin-left: 0.5em;
 }
 
 
@@ -162,7 +156,7 @@ margin: 10px;
 .counterdown {
   display: flex;
   flex-direction: column;
-  border: solid;
+  border: solid 1px var(--light-color);
   padding: 1em;
   margin: 1em;
 }
@@ -184,7 +178,7 @@ margin: 10px;
 .details {
   display: flex;
   flex-direction: row;
-  border: solid;
+  border: solid 1px var(--light-color);
   margin: 1em;
   padding: 1em;
   justify-content: space-between;
@@ -198,6 +192,12 @@ margin: 10px;
 /* .background-student {
   background-image: url("../public/img/");
 } */
+
+
+.about-section header{
+  display: flex;
+  justify-content: space-around;
+}
 
 .background-student img {
   border-radius: 50%;

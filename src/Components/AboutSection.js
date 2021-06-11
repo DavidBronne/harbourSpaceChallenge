@@ -7,7 +7,7 @@ import {ApprenticeshipContext} from '../contexts/ApprenticeshipContext'
 const AboutSection = () => {
     const {data, isPending, error} = useContext(ApprenticeshipContext)
     return (
-        <section>
+        <section className="about-section">
         <header>
             <div className="background-student">
                 <img src="/img/edit2 1.png" alt="student"/>

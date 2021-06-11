@@ -9,7 +9,7 @@ const ApplySection = () => {
 
     return data && (
         <section className="apply-section">
-            <div className="apply-section__left">
+            <div className="format-half-section">
                 <h1>{data.scholarship.name}  
                     {/* <img className="stamp" src="/img/Icon.jpg" alt="Icon" ></img> */}
                 </h1>
@@ -26,7 +26,7 @@ const ApplySection = () => {
                 <button className="btn">Apply now</button>
             </div>
         
-            <div className="apply-section__right">
+            <div className="format-half-section">
                 <header>
                     <img src="/img/Logo.jpg" alt="logo"/>
                     <div>
