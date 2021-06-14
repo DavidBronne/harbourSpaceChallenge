@@ -14,6 +14,12 @@ const FaqAnswer = ({selection}) => {
             return <div>{el.question}</div>
         })
     } */
+    const {toggleDetailButton} = useContext(ApprenticeshipContext)
+   
+
+    
+    const {isDetailed} = useContext(ApprenticeshipContext)
+    console.log('isDetailed :>> ', isDetailed);
     return <div>
         
         { data && data.scholarship.faqs.items
@@ -21,15 +27,29 @@ const FaqAnswer = ({selection}) => {
                         return item.type === selection
                     })
                     .map( (el, i) => {
-                        return <div className="format-row-item border-top" key={i}>
+                        return (
+
+                                
+                                <div className="format-row-item border-top" key={i}>
                                     <h2 className="format-1third-section">{selection}</h2>
-                                    <details className="format-2third-section">
-                                        <summary>{el.question}</summary>
-                                        {el.answer.map( (an,i) => {
-                                            return <p className="answer text-small" key={i}>{an.data}</p>
-                                        })}
-                                    </details>
-                            </div>
+                                    <div className="format-2third-section" >
+                                        <div>
+                                            <div >{el.question}</div>
+                                            <div onClick={toggleDetailButton} >button</div>
+                                        </div>
+                                        
+                                       { isDetailed  ? (
+                                                <div>
+                                                    {el.answer.map( (an,i) => {
+                                                        return <p className="answer text-small" key={i}>{an.data}</p>
+                                                    })}
+                                                </div>
+                                            ) : <div></div>}
+                                        
+                                    </div>
+                                </div>
+                            
+                    )
                     })
         }
     </div>

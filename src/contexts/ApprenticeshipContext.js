@@ -7,6 +7,7 @@ const ApprenticeshipContextProvider = (props) => {
     const [data, setData] = useState(null);
     const [isPending, setIsPending] = useState(true);
     const [error, setError] = useState(null);
+    const [isDetailed, setIsDetailed] = useState(false);
     
     // fetch Api here and set state
     const useFetchApi = (apiUrl) => {
@@ -35,9 +36,16 @@ const ApprenticeshipContextProvider = (props) => {
             return () => abortCont.abort(); 
         }, [apiUrl])
     }
+
+    const toggleDetailButton = () => {
+          
+        setIsDetailed(!isDetailed)
+            console.log('isDetailed :>> ', isDetailed);
+       
+    } 
     
     return (
-        <ApprenticeshipContext.Provider value={{data, isPending, error, useFetchApi}}>
+        <ApprenticeshipContext.Provider value={{data, isPending, error, useFetchApi,toggleDetailButton, isDetailed}}>
             {props.children}
         </ApprenticeshipContext.Provider>
     );
