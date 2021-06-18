@@ -16,7 +16,7 @@ const Faq = () => {
     
     return (
         <section className="format-header-faq">
-            <header className="format-row-item format-wrap-item">
+            <header className="format-row-item format-wrap-item format-space-between-item">
                 <h1 className="format-1third-section">Frequently asked questions</h1>
                     <div className="format-align-self-center-item select-wrapper">
                         <label htmlFor="categories" className="format-align-self-center-item"> filter by:</label>

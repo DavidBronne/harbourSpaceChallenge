@@ -7,6 +7,11 @@ const FaqAnswer = ({selection}) => {
 
     const {toggleDetailButton} = useContext(ApprenticeshipContext)
     const {isDetailed} = useContext(ApprenticeshipContext)
+    const {questionId} = useContext(ApprenticeshipContext)
+    const status = isDetailed ? "opened" : "closed"
+   console.log('status :>> ', status);
+   console.log(`isDetailed`, isDetailed)
+   console.log(`questionId`, questionId)
    
     return <div>
         
@@ -14,20 +19,26 @@ const FaqAnswer = ({selection}) => {
             .filter( item => {
                 return item.type === selection
             })
-            .map( (el, i) => {
+            .map( (question, questionIndex) => {
                 return ( 
-                    <div className="format-row-item border-top" key={i}>
+                    <div className="format-row-item border-top" key={questionIndex}>
                         <h2 className="format-1third-section">{selection}</h2>
                         <div className="format-2third-section" >
-                            <div>
-                                <div >{el.question}</div>
-                                <div onClick={toggleDetailButton} >button</div>
+                            <div className="format-align-center-item format-space-between-item">
+                                <div >{question.question}</div>
+                                <div onClick={()=>toggleDetailButton(questionIndex)} className={"circle-plus " + (questionId === questionIndex ? status : "closed")}>  
+                                    <div className="circle">
+                                        <div className="horizontal"></div>
+                                        <div className="vertical"></div>
+                                    </div>     
+                                </div>
+
                             </div>
                             
-                            { isDetailed  ? (
+                            { (isDetailed && questionId === questionIndex) ? (
                                     <div>
-                                        {el.answer.map( (an,i) => {
-                                            return <p className="answer text-small" key={i}>{an.data}</p>
+                                        {question.answer.map( (paragraph,i) => {
+                                            return <p className="answer text-small" key={i}>{paragraph.data}</p>
                                         })}
                                     </div>
                                 ) : <div></div>}

@@ -8,7 +8,7 @@ const Testimonials = () => {
             <div className="items">
                 <div id="slides" className="profile-card format-column-item format-90pc-item format-item-box item item1">
                     <header>
-                        <div className="format-row-item format-wrap-item">
+                        <div className="format-row-item format-wrap-item format-space-between-item">
                             <div className="format-row-item card">
                                 <img className="rounded-img" src="/img/profilePic.png" alt="Profile pic"/>
                                 <div className="format-column-item format-align-center-item">
@@ -29,7 +29,7 @@ const Testimonials = () => {
                 </div>
                 <div id="slides" className="profile-card format-column-item format-90pc-item format-item-box item item3">
                     <header>
-                        <div className="format-row-item format-wrap-item">
+                        <div className="format-row-item  format-space-between-item">
                             <div className="format-row-item card">
                                 <img className="rounded-img" src="/img/profilePic.png" alt="Profile pic"/>
                                 <div className="format-column-item format-align-center-item">

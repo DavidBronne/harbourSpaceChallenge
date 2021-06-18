@@ -180,6 +180,11 @@ margin: 10px;
 .format-wrap-item {
   display: flex;
   flex-wrap: wrap;
+  
+}
+.format-space-between-item {
+  display: flex;
+  
   justify-content: space-between;
 }
 .format-align-center-item {
@@ -425,9 +430,77 @@ details[open] summary:after {
   border: solid 1px var(--light-color);
 }
 
+
 @keyframes sweep {
   0%    {opacity: 0; transform: translateX(-10px)}
   100%  {opacity: 1; transform: translateX(0)}
+}
+/*------------------------------------*\
+  #Button +/- animation
+\*------------------------------------*/
+ .closed .vertical {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(-90deg);
+    background-color: var(--main-color);
+    
+  }
+   .closed .horizontal {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+  opacity: 1;
+  background-color: var(--main-color);
+}
+
+ .opened .vertical {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(90deg);
+    background-color: #ffffff;
+}
+ .opened .horizontal {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+  opacity: 0;
+  background-color: #ffffff;
+}
+
+.circle-plus {
+  height: 4em;
+  width: 4em;
+  font-size: 1em;
+  opacity: .7;
+}
+
+.circle-plus .circle {
+  position: relative;
+  width: 2.55em;
+  height: 2.5em;
+  border-radius: 100%;
+  border: solid .2em var(--main-color);
+  
+}
+
+.opened .circle{
+  transition: all 0.5s ease-in-out; 
+  background-color: var(--main-color);
+}
+
+.circle-plus .circle .vertical {
+  position: absolute;
+  width: 5px;
+  height: 30px;
+  left: 50%;
+  margin-left: -2.5px;
+  top: 50%;
+  margin-top: -15px;
+}
+.circle-plus .circle .horizontal {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  left: 50%;
+  margin-left: -15px;
+  top: 50%;
+  margin-top: -2.5px;
 }
 
 
@@ -453,25 +526,25 @@ details[open] summary:after {
 \*------------------------------------*/
 
 @media only screen and (max-width: 900px) {
-  .format-section, .format-row-item :not(.card){
-      /* it place the items in vertical direction */
-    flex-direction: column;
-  }
-  .format-half-section, .format-1third-section, .format-2third-section  {
-    display: flex;
-    width: 90%;
-    padding: 1em;
-  }
-  .reverse {
-    flex-direction: column-reverse;
-  }
+    .format-section, .format-row-item :not(.card){
+        /* it places the items in vertical direction */
+      flex-direction: column;
+    }
+    .format-half-section, .format-1third-section, .format-2third-section  {
+      display: flex;
+      width: 90%;
+      padding: 1em;
+    }
+    .reverse {
+      flex-direction: column-reverse;
+    }
 
-  .select-wrapper::after {
-    top:40%
-  }
+    .select-wrapper::after {
+      top:40%
+    }
 
-  .format-90pc-item {
-    margin: 0;
-  }
+    .format-90pc-item {
+      margin: 0;
+    }
 
 }

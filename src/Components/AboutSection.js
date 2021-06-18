@@ -18,13 +18,13 @@ const AboutSection = () => {
             </div>
         </header>
         <div className="format-section">   
-            <div className="format-1third-section format-item-box format-wrap-item">
+            <div className="format-1third-section format-item-box format-wrap-item format-space-between-item">
                 <div>
                     <h2>Scholarship value</h2>
                     <p className="emphase">€{data.scholarship.total_value.toLocaleString()}</p>
                 </div>
             
-                <div className="format-row-item format-wrap-item border-top format-1third-height">
+                <div className="format-row-item format-wrap-item format-space-between-item border-top format-1third-height">
                     <div className="format-50pc-item">
                         <h2>Tutition covered</h2>
                         <p className="text-small">€{data.scholarship.tuition.toLocaleString()}</p>

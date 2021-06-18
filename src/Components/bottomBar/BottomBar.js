@@ -12,7 +12,7 @@ const BottomBar = () => {
     return (    
         <div className="BottomBar fix-bottom">
         {data && 
-            <div className="format-row-item format-wrap-item ">
+            <div className="format-row-item format-wrap-item format-space-between-item ">
                 <BottomBarElement title={data.scholarship.company.name} content={data.scholarship.company.type}/>
                 <BottomBarElement title='Location' content={data.scholarship.location.name}/>
                 <BottomBarElement title='Duration' content={data.scholarship.duration + " full year"}/>
